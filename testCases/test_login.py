@@ -32,7 +32,7 @@ class Test_001_login(BaseTest):
         self.loginpage.setPassword(data.get('password'))
         self.loginpage.clickLogin()
         exp_home_page_title = self.driver.title
-        if exp_home_page_title == "Dashboard / nopCommerce administration1":
+        if exp_home_page_title == "Dashboard / nopCommerce administration":
             assert True
         else:
             self.driver.get_screenshot_as_png("C:\\Users\\Admin\\PycharmProjects\\pythonProject1\\ScreenShots"+"test_login_flow01.png")
